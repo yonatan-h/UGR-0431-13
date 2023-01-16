@@ -3,127 +3,196 @@
   <head>
     <title>About Us | Zana</title>
     <meta charset="utf-8" />
-    <meta title="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="images/logos/logo.svg" type="image/x-icon" />
+    <script defer src="js/app.js"></script>
   </head>
   <body>
-    <header>
-      <img src="images/logos/logo.svg" alt="logo of Zana" />
+    <header class="main-header">
+      <div class="wrapper">
+        <div class="main-header__bar">
+          <div class="main-header__logo-menu-wrapper">
+            <img
+              class="main-header__logo"
+              src="images/logos/logo.svg"
+              alt="logo of Zana"
+            />
+            <button class="main-header__menu-button">Menu</button>
+          </div>
 
-      <nav>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="products/phones.html">PRODUCTS</a></li>
-          <li><a href="services.html">SERVICES</a></li>
-          <li><a href="about-us.html">ABOUT US</a></li>
-          <li><a href="contact-us.html">CONTACT US</a></li>
-        </ul>
-      </nav>
+          <nav class="main-header__nav main-header__nav--hide">
+            <ul class="main-header__links">
+              <li class="main-header__li">
+                <a class="main-header__link" href="index.html">HOME</a>
+              </li>
+              <li class="main-header__li">
+                <a class="main-header__link" href="products/phones.html"
+                  >PRODUCTS</a
+                >
+              </li>
+              <li class="main-header__li">
+                <a class="main-header__link" href="services.html">SERVICES</a>
+              </li>
+              <li class="main-header__li">
+                <a class="main-header__link" href="about-us.html">ABOUT US</a>
+              </li>
+              <li class="main-header__li">
+                <a class="main-header__link" href="contact-us.html"
+                  >CONTACT US</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
 
-      <h1>Samsung Tablets</h1>
+        <h1 class="page-heading">About Us</h1>
+      </div>
     </header>
     <main>
       <section>
-        <div>
-          <h2>Background</h2>
-          <p>
-            Zana Electronics Distributer is a company that imports and
-            distributes Samsung Products for Addis Ababa. Its key activities
-            include distributeing samsung phones, tablets, and watches. It also
-            includes providing mobile repair training to individuals.
-          </p>
-        </div>
-      </section>
-
-      <section>
-        <h2>Mission, Vision & Value</h2>
-        <div>
+        <div class="wrapper">
           <div>
-            <h3>Our mission</h3>
-            <div>
-              <p>
-                Give reliable and quick products and services to our customers.
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <h3>Our Vision</h3>
-            <div>
-              <p>
-                Give reliable and quick products and services to our customers.
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <h3>Our Values</h3>
-            <div>
-              <ul>
-                <li>We value fast and efficient delivery.</li>
-                <li>We value providing safe and quality product delivery</li>
-                <li>
-                  We value the trust and partnership we have with our customers.
-                </li>
-              </ul>
-            </div>
+            <h2>Background</h2>
+            <p>
+              Zana Electronics Distributer is a company that imports and
+              distributes Samsung Products for Addis Ababa. Its key activities
+              include distributeing samsung phones, tablets, and watches. It
+              also includes providing mobile repair training to individuals.
+            </p>
           </div>
         </div>
       </section>
 
+      <div class="wrapper">
+        <div class="light-background">
+          <section class="mvv">
+            <h2>Mission, Vision & Value</h2>
+            <div class="mvv__cards">
+              <div class="mvv__card">
+                <h3 class="mvv__title">Our mission</h3>
+                <div class="mvv__description">
+                  <p>
+                    Give reliable and quick products and services to our
+                    customers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mvv__card">
+                <h3 class="mvv__title">Our Vision</h3>
+                <div class="mvv__descripton">
+                  <p>
+                    Give reliable and quick products and services to our
+                    customers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mvv__card">
+                <h3 class="mvv__title">Our Values</h3>
+                <div class="mvv__description">
+                  <ul>
+                    <li>We value fast and efficient delivery.</li>
+                    <li>
+                      We value providing safe and quality product delivery
+                    </li>
+                    <li>
+                      We value the trust and partnership we have with our
+                      customers.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
       <section>
-        <h2>Company Details</h2>
-        <table>
-          <tr>
-            <th>Founder</th>
-            <td>Zana Asmamaw</td>
-          </tr>
-          <tr>
-            <th>Foundation Date</th>
-            <td>2010 <abbr title="Ethiopain Calander">E.C</abbr></td>
-          </tr>
-          <tr>
-            <th>Employees</th>
-            <td>27</td>
-          </tr>
-          <tr>
-            <th>Annual Turnover</th>
-            <td>3.5 million birr</td>
-          </tr>
-        </table>
+        <div class="wrapper">
+          <h2>Company Details</h2>
+          <table class="table">
+            <tr>
+              <th class="table__data">Founder</th>
+              <td class="table__data">Zana Asmamaw</td>
+            </tr>
+            <tr>
+              <th class="table__data">Foundation Date</th>
+              <td class="table__data">
+                2010 <abbr title="Ethiopain Calander">E.C</abbr>
+              </td>
+            </tr>
+            <tr>
+              <th class="table__data">Employees</th>
+              <td class="table__data">27</td>
+            </tr>
+            <tr>
+              <th class="table__data">Annual Turnover</th>
+              <td class="table__data">3.5 million birr</td>
+            </tr>
+          </table>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <div>
-        <h2>Contact Information</h2>
+    <footer class="main-footer">
+      <div class="wrapper">
+        <div class="main-footer__columns">
+          <div class="main-footer__column">
+            <h2 class="main-footer__column-heading">Contact Information</h2>
 
-        <dl>
-          <dt>Email</dt>
-          <dd>zana@gmail.com</dd>
+            <dl>
+              <dt class="main-footer__column-item">Email</dt>
+              <dd class="main-footer__column-item">zana@gmail.com</dd>
 
-          <dt>Phone</dt>
-          <dd>+251-9912-900</dd>
+              <dt class="main-footer__column-item">Phone</dt>
+              <dd class="main-footer__column-item">+251-9912-900</dd>
 
-          <dt>WhatsApp</dt>
-          <dd>+251-9912-901</dd>
-        </dl>
-      </div>
+              <dt class="main-footer__column-item">WhatsApp</dt>
+              <dd class="main-footer__column-item">+251-9912-901</dd>
+            </dl>
+          </div>
 
-      <div>
-        <h2>Pages</h2>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products/phones.html">Products</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about-us.html">About Us</a></li>
-          <li><a href="contact-us.html">Contact Us</a></li>
-        </ul>
-      </div>
+          <div>
+            <h2 class="main-footer__column-heading">Pages</h2>
+            <ul>
+              <li class="main-footer__li">
+                <a class="main-footer__column-item" href="index.html">Home</a>
+              </li>
+              <li class="main-footer__li">
+                <a class="main-footer__column-item" href="products/phones.html"
+                  >Products</a
+                >
+              </li>
+              <li class="main-footer__li">
+                <a class="main-footer__column-item" href="services.html"
+                  >Services</a
+                >
+              </li>
+              <li class="main-footer__li">
+                <a class="main-footer__column-item" href="about-us.html"
+                  >About Us</a
+                >
+              </li>
+              <li class="main-footer__li">
+                <a class="main-footer__column-item" href="contact-us.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
 
-      <div>
-        <p>Zana Building, Mexico, Addis Ababa, Ethiopia</p>
-        <p>© 2022 All Rights Reserved. Zana Distributor.</p>
+          <div>
+            <p class="main-footer__column-item">
+              Zana Building, Mexico, Addis Ababa, Ethiopia
+            </p>
+            <p class="main-footer__column-item">
+              © 2022 All Rights Reserved. Zana Distributor.
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
