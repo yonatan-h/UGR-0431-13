@@ -125,6 +125,7 @@ h2 {
 
 .hero__button-link {
   text-decoration: none;
+  color: inherit;
 }
 
 .hero__video-wrapper {
