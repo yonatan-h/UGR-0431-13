@@ -1,0 +1,25 @@
+WEBVTT
+
+1
+00:00.000 --> 00:04.000
+(A Galaxy Z Flip4 phone is opened.)
+
+2
+00:04.000 --> 00:10.000
+(A cat watches several people taking a selfie with the phone.)
+
+3
+00:13.000 --> 00:14.000
+(The cat drops the phone from the table.)
+
+4
+00:15.000 --> 00:19.000
+(The cat takes several selfies by clicking on the phone.)
+
+5
+00:20.000 --> 00:24.000
+(The cat takes other selfies with two dogs.)
+
+6
+00:27.000 --> 00:35.000
+Unfold your world. Samsung.
