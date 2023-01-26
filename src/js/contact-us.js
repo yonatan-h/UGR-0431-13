@@ -10,7 +10,7 @@ copyEmailButtion.addEventListener("click", async () => {
 });
 
 const contactForm = document.querySelector("#contact-form");
-const textArea = contactForm.querySelector(".form__message");
+const textArea = contactForm.querySelector("#message");
 
 contactForm.onsubmit = (event) => {
   const messageText = textArea.value;

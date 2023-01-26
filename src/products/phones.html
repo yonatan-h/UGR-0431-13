@@ -5,270 +5,254 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../bootstrap-5/css/bootstrap.css" />
+    <script defer src="../bootstrap-5/js/bootstrap.js"></script>
     <link rel="icon" href="../images/logos/logo.svg" type="image/x-icon" />
-    <script defer src="../js/app.js"></script>
   </head>
   <body>
-    <header class="main-header">
-      <div class="wrapper">
-        <div class="main-header__bar">
-          <div class="main-header__logo-menu-wrapper">
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="index.html">
             <img
-              class="main-header__logo"
+              class="img-fluid"
+              style="max-height: 3rem"
               src="../images/logos/logo.svg"
               alt="logo of Zana"
             />
-            <button class="main-header__menu-button">Menu</button>
-          </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-          <nav class="main-header__nav main-header__nav--hide">
-            <ul class="main-header__links">
-              <li class="main-header__li">
-                <a class="main-header__link" href="../index.html">HOME</a>
+          <div
+            class="collapse navbar-collapse d-lg-flex justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mr-auto my-3">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">HOME</a>
               </li>
-              <li class="main-header__li">
-                <a class="main-header__link" href="../products/phones.html"
-                  >PRODUCTS</a
-                >
+              <li class="nav-item">
+                <a class="nav-link" href="../products/phones.html">PRODUCTS</a>
               </li>
-              <li class="main-header__li">
-                <a class="main-header__link" href="../services.html"
-                  >SERVICES</a
-                >
+              <li class="nav-item">
+                <a class="nav-link" href="../services.html">SERVICES</a>
               </li>
-              <li class="main-header__li">
-                <a class="main-header__link" href="../about-us.html"
-                  >ABOUT US</a
-                >
+              <li class="nav-item">
+                <a class="nav-link" href="../about-us.html">ABOUT US</a>
               </li>
-              <li class="main-header__li">
-                <a class="main-header__link" href="../contact-us.html"
-                  >CONTACT US</a
-                >
+              <li class="nav-item">
+                <a class="nav-link" href="../contact-us.html">CONTACT US</a>
               </li>
             </ul>
-          </nav>
-        </div>
+          </div>
+        </nav>
 
-        <h1 class="page-heading">Samsung Phones</h1>
+        <h1 class="my-5">Samsung Phones</h1>
       </div>
     </header>
 
-    <main>
-      <div class="wrapper">
-        <div class="product-page-grid">
-          <section class="explore-products">
-            <h2 class="explore-products__header">Explore Our Products</h2>
-            <nav>
-              <ul>
-                <li class="explore-products__li">
-                  <a
-                    class="explore-products__link"
-                    href="../products/phones.html"
-                    >--> Samsung Phones
-                  </a>
-                </li>
-                <li class="explore-products__li">
-                  <a
-                    class="explore-products__link"
-                    href="../products/tablets.html"
-                    >Samsung Tablets
-                  </a>
-                </li>
-                <li class="explore-products__li">
-                  <a
-                    class="explore-products__link"
-                    href="../products/watches.html"
-                    >Samsung Watches
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </section>
+    <main class="container mb-5">
+      <div class="row gx-lg-5 justify-content-between">
+        <section class="col-lg-4 bg-dark rounded p-5 h-25">
+          <h2 class="text-light">Explore Our Products</h2>
+          <nav class="nav">
+            <ul class="list-unstyled">
+              <li>
+                <a class="link-light" href="../products/phones.html"
+                  >--> Samsung Phones
+                </a>
+              </li>
+              <li>
+                <a class="link-light" href="../products/tablets.html"
+                  >Samsung Tablets
+                </a>
+              </li>
+              <li>
+                <a class="link-light" href="../products/watches.html"
+                  >Samsung Watches
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
 
-          <ul class="products">
-            <li class="products__li">
-              <div class="product">
-                <p class="product__desctiption">
+        <div class="col-lg-8">
+          <ul class="row g-3 list-unstyled justify-content-between">
+            <li class="col-lg-5">
+              <div class="card">
+                <p class="card-header">
                   S Galaxy 12 <br />
                   80,000 birr for 1 case
                 </p>
                 <img
-                  class="product__image"
+                  class="card-body w-100 image-fluid"
                   src="../images/phones/phone1.jpeg"
                   alt="S Galaxy 12"
                 />
               </div>
             </li>
 
-            <li class="products__li">
-              <div class="product">
-                <p class="product__description">
+            <li class="col-lg-5">
+              <div class="card">
+                <p class="card-header">
                   Sereies A10s <br />
                   90,000 birr for 1 case
                 </p>
                 <img
-                  class="product__image"
+                  class="card-body w-100 image-fluid"
                   src="../images/phones/phone2.jpeg"
                   alt="Sereies A10s"
                 />
               </div>
             </li>
 
-            <li class="products__li">
-              <div class="product">
-                <p class="product__description">
+            <li class="col-lg-5">
+              <div class="card">
+                <p class="card-header">
                   Note 12 <br />
                   85,000 birr for 1 case
                 </p>
                 <img
-                  class="product__image"
+                  class="card-body w-100 image-fluid"
                   src="../images/phones/phone3.jpeg"
                   alt="Note 12"
                 />
               </div>
             </li>
 
-            <li class="products__li">
-              <div class="product">
-                <p class="product__description">
+            <li class="col-lg-5">
+              <div class="card">
+                <p class="card-header">
                   Note 65A <br />
                   84,000 birr for 1 case
                 </p>
                 <img
-                  class="product__image"
+                  class="card-body w-100 image-fluid"
                   src="../images/phones/phone4.jpeg"
                   alt="Note 65A"
                 />
               </div>
             </li>
 
-            <li class="products__li">
-              <div class="product">
-                <p class="product__description">
+            <li class="col-lg-5">
+              <div class="card">
+                <p class="card-header">
                   Note 20 ultra <br />
                   50,000 birr for 1 case
                 </p>
                 <img
-                  class="product__image"
+                  class="card-body w-100 image-fluid"
                   src="../images/phones/phone5.jpeg"
                   alt="Note 20 ultra"
                 />
               </div>
             </li>
 
-            <li class="products__li">
-              <div class="product">
-                <p class="product__description">
+            <li class="col-lg-5">
+              <div class="card">
+                <p class="card-header">
                   Galaxy S35+ <br />
                   60,000 birr for 1 case
                 </p>
                 <img
-                  class="product__image"
+                  class="card-body w-100 image-fluid"
                   src="../images/phones/phone6.jpeg"
                   alt="Galaxy S35+"
                 />
               </div>
             </li>
 
-            <li class="products__li">
-              <div class="product">
-                <p class="product__description">
+            <li class="col-lg-5">
+              <div class="card">
+                <p class="card-header">
                   Note 10 <br />
                   65,000 birr for 1 case
                 </p>
                 <img
-                  class="product__image"
+                  class="card-body w-100 image-fluid"
                   src="../images/phones/phone7.jpeg"
                   alt="Note 10"
                 />
               </div>
             </li>
 
-            <li class="products__li">
-              <div class="product">
-                <p class="product__description">
+            <li class="col-lg-5">
+              <div class="card">
+                <p class="card-header">
                   A30 <br />
                   80,000 birr for 1 case
                 </p>
                 <img
-                  class="product__image"
+                  class="card-body w-100 image-fluid"
                   src="../images/phones/phone8.jpeg"
                   alt="A30"
                 />
               </div>
             </li>
           </ul>
-
-          <section class="product-of-interest">
-            <h2>Found A Product Of Interest?</h2>
-            <a href="../contact-us.html">
-              <button class="button button--dark">Contact Us</button>
-            </a>
-          </section>
         </div>
+
+        <section class="col-lg-4 card p-3">
+          <h2 class="card-head">Found A Product Of Interest?</h2>
+          <a class="card-body" href="../contact-us.html">
+            <button class="btn btn-primary">Contact Us</button>
+          </a>
+        </section>
       </div>
     </main>
 
-    <footer class="main-footer">
-      <div class="wrapper">
-        <div class="main-footer__columns">
-          <div class="main-footer__column">
-            <h2 class="main-footer__column-heading">Contact Information</h2>
+    <footer class="bg-dark">
+      <div class="container text-light">
+        <div class="row gy-3">
+          <div class="col-lg-4">
+            <h2>Contact Information</h2>
 
             <dl>
-              <dt class="main-footer__column-item">Email</dt>
-              <dd class="main-footer__column-item">zana@gmail.com</dd>
+              <dt>Email</dt>
+              <dd>zana@gmail.com</dd>
 
-              <dt class="main-footer__column-item">Phone</dt>
-              <dd class="main-footer__column-item">+251-9912-900</dd>
+              <dt>Phone</dt>
+              <dd>+251-9912-900</dd>
 
-              <dt class="main-footer__column-item">WhatsApp</dt>
-              <dd class="main-footer__column-item">+251-9912-901</dd>
+              <dt>WhatsApp</dt>
+              <dd>+251-9912-901</dd>
             </dl>
           </div>
 
-          <div>
-            <h2 class="main-footer__column-heading">Pages</h2>
+          <div class="col-lg-4">
+            <h2>Pages</h2>
             <ul>
-              <li class="main-footer__li">
-                <a class="main-footer__column-item" href="../index.html"
-                  >Home</a
-                >
+              <li>
+                <a class="link-light" href="../index.html">Home</a>
               </li>
-              <li class="main-footer__li">
-                <a
-                  class="main-footer__column-item"
-                  href="../products/phones.html"
-                  >Products</a
-                >
+              <li>
+                <a class="link-light" href="../cards/phones.html">cards</a>
               </li>
-              <li class="main-footer__li">
-                <a class="main-footer__column-item" href="../services.html"
-                  >Services</a
-                >
+              <li>
+                <a class="link-light" href="../services.html">Services</a>
               </li>
-              <li class="main-footer__li">
-                <a class="main-footer__column-item" href="../about-us.html"
-                  >About Us</a
-                >
+              <li>
+                <a class="link-light" href="../about-us.html">About Us</a>
               </li>
-              <li class="main-footer__li">
-                <a class="main-footer__column-item" href="../contact-us.html"
-                  >Contact Us</a
-                >
+              <li>
+                <a class="link-light" href="../contact-us.html">Contact Us</a>
               </li>
             </ul>
           </div>
 
-          <div>
-            <p class="main-footer__column-item">
-              Zana Building, Mexico, Addis Ababa, Ethiopia
-            </p>
-            <p class="main-footer__column-item">
-              © 2022 All Rights Reserved. Zana Distributor.
-            </p>
+          <div class="col-lg-4">
+            <p>Zana Building, Mexico, Addis Ababa, Ethiopia</p>
+            <p>© 2022 All Rights Reserved. Zana Distributor.</p>
           </div>
         </div>
       </div>
